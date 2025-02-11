@@ -1,0 +1,243 @@
+:root {
+    --bg-primary-color: #262626;
+    --bg-secondary-color: #404040;
+    --icon-color: #be123c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary-color);
+}
+
+/* header {
+    position: sticky;
+    top: 0;
+} */
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-inline-start: 0;
+    padding: 2px 0;
+    border-radius: 8px;
+    border: 1px solid var(--bg-secondary-color);
+}
+
+.nav-element {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.nav-element:hover {
+    background-color: var(--bg-secondary-color);
+    border-radius: 8px;
+}
+
+.nav-icon {
+    color: aliceblue;
+}
+
+.main {
+    margin: 30px 125px;
+    margin-top: 60px;
+    gap: 0 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+}
+
+.profil-card {
+    position: sticky;
+    top: 20px;
+    border-radius: 8px;
+    background-color: #ffff;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.profil-card-image {
+    border-radius: 10px;
+    width: 13rem;
+    margin-top: 20px;
+}
+
+.my-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.my-description {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profil-card-social {
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+
+.social-element {
+    margin: 5px;
+    padding: 3px;
+    color: var(--icon-color);
+    text-decoration: none;
+}
+
+.social-element:hover {
+    border-radius: 5px;
+    background-color: #94a3b8;
+}
+
+.nav-content {
+    font-family: "Poppins", "Poppins Placeholder", sans-serif;
+}
+
+.nav-content>.title {
+    margin: 0;
+    font-size: 75px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-content>.title>span {
+    color: rgba(182, 180, 189, 0.2);
+    font-size: 75px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.nav-content>.description {
+    font-size: 15px;
+    color: rgb(153, 143, 143);
+    animation-duration: 3s;
+    animation-name: slide-in;
+}
+
+
+.experience {
+    margin: 0;
+    font-size: 90px;
+    font-weight: 600;
+    color: white;
+}
+
+.experience-text {
+    margin: 0;
+    font-size: 20px;
+    /* font-weight: 600; */
+    color: rgb(153, 143, 143);
+    ;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px 0;
+    max-width: 50%;
+}
+
+.project {
+    margin: 10px 0;
+    display: flex;
+    gap: 0 5px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 65px;
+    color: white;
+    font-weight: 600;
+}
+
+.structure-title {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.project-description {
+    padding: 15px 0;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(153, 143, 143);
+}
+
+.role-description, .period{
+    padding: 15px 0;
+    font-size: 15px;
+    color: rgb(153, 143, 143);
+}
+
+.role-description, .period{
+    margin:10px
+}
+.period {
+    margin:0 10px
+}
+
+
+.project>.left-content {
+   display: flex;
+   flex-direction: row;
+}
+.project >.left-content >img {
+    border-radius: 10px;
+    width: 6rem;
+    margin: 10px;
+}
+
+.project:hover {
+    border-radius: 10px;
+    background-color: rgb(64 64 64);
+}
+
+.project>i {
+    padding: 8px;
+    color: rgb(190 18 60);
+    font-size: 25px;
+}
+
+.project:hover>i {
+    
+}
+
+
+.additional-content {
+    display: flex;
+    gap: 0 15px;
+    text-align: end;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 5vw 0;
+    scale: 100% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 45rem;
+}
