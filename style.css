@@ -165,7 +165,6 @@ body {
 }
 
 .structure-title {
-    margin: 0;
     font-size: 15px;
     color: white;
     font-weight: 600;
@@ -179,25 +178,29 @@ body {
     color: rgb(153, 143, 143);
 }
 
-.role-description, .period{
+.role-description,
+.period {
     padding: 15px 0;
     font-size: 15px;
     color: rgb(153, 143, 143);
 }
 
-.role-description, .period{
-    margin:10px
-}
+.role-description,
 .period {
-    margin:0 10px
+    margin: 10px
+}
+
+.period {
+    margin: 0 10px
 }
 
 
 .project>.left-content {
-   display: flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
-.project >.left-content >img {
+
+.project>.left-content>img {
     border-radius: 10px;
     width: 6rem;
     margin: 10px;
@@ -214,27 +217,63 @@ body {
     font-size: 25px;
 }
 
-.project:hover>i {
-    
-}
-
-
 .additional-content {
     display: flex;
     gap: 0 15px;
     text-align: end;
 }
 
-@keyframes slide-in {
-  from {
-    translate: 5vw 0;
-    scale: 100% 1;
-  }
+.stack>.title {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    margin-top: 40px;
+}
 
-  to {
-    translate: 0 0;
-    scale: 100% 1;
-  }
+.technos {
+    display: flex;
+    gap: 10px;
+}
+
+.techno {
+    padding: 10px;
+    /* max-width: min-content; */
+    border: 1px solid var(--bg-secondary-color);
+    border-radius: 7px;
+    /* box-shadow: 2px 2px 2px rgb(148, 146, 146); */
+}
+
+.techno>.description {
+    margin-top:4px;
+    padding: 2px 3px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: rgb(153, 143, 143);
+    border: 1px solid rgb(153, 143, 143);
+    text-align: center;
+}
+
+.tech-icon {
+    border-radius: 10px;
+    width: 3rem;
+}
+
+.dev, .cms-auto{
+    display: flex;
+    column-gap: 10px;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 5vw 0;
+        scale: 100% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
 }
 
 hr.solid {
