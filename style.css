@@ -109,7 +109,7 @@ body {
 
 .nav-content>.title>span {
     color: rgba(182, 180, 189, 0.2);
-    font-size: 75px;
+    font-size: 4.5rem;
     font-weight: 900;
     margin: 0;
 }
@@ -141,7 +141,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px 0;
-    width: 50%;
+    width: 50vw;
 }
 
 .project {
@@ -266,13 +266,37 @@ body {
     .main{
         flex-direction: column;
         align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
     }
     .profil-card {
         position: relative;
     }
     .content {
-        width: 100%;
+        justify-content: center;
+        width: 100vw;
     }
+    .nav-content>.title {
+        font-size: 3rem;
+    }
+
+    .nav-content>.title>span {
+        font-size: 3rem;
+    }
+
+    .profil-card {
+        display: flex;
+        top: 0px;
+        align-items: center;
+        padding: 5px; 
+        margin-bottom: 25px;
+        width: 100vw;
+    }
+
+    .profil-card-image {
+        margin-top: 0;
+    }
+    
   }
 
 @keyframes slide-in {
