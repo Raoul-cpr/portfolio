@@ -10,10 +10,6 @@ body {
     background-color: var(--bg-primary-color);
 }
 
-/* header {
-    position: sticky;
-    top: 0;
-} */
 
 .nav {
     display: flex;
@@ -67,17 +63,17 @@ body {
 .profil-card-image {
     border-radius: 10px;
     width: 13rem;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
 .my-name {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: Georgia, serif;
 }
 
 .my-description {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -105,7 +101,7 @@ body {
 
 .nav-content>.title {
     margin: 0;
-    font-size: 75px;
+    font-size: 4.5rem;
     color: white;
     font-weight: 900;
     text-transform: uppercase;
@@ -128,15 +124,14 @@ body {
 
 .experience {
     margin: 0;
-    font-size: 90px;
+    font-size: 3rem;
     font-weight: 600;
     color: white;
 }
 
 .experience-text {
     margin: 0;
-    font-size: 20px;
-    /* font-weight: 600; */
+    font-size: 1.5rem;
     color: rgb(153, 143, 143);
     ;
     text-transform: uppercase;
@@ -146,7 +141,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px 0;
-    max-width: 50%;
+    width: 50%;
 }
 
 .project {
@@ -159,13 +154,13 @@ body {
 
 .project-title {
     margin: 0;
-    font-size: 65px;
+    font-size: 1.5rem;
     color: white;
     font-weight: 600;
 }
 
 .structure-title {
-    font-size: 15px;
+    font-size: 3rem;
     color: white;
     font-weight: 600;
     margin: 10px;
@@ -174,14 +169,14 @@ body {
 .project-description {
     padding: 15px 0;
     margin: 0;
-    font-size: 15px;
+    font-size: .80rem;
     color: rgb(153, 143, 143);
 }
 
 .role-description,
 .period {
     padding: 15px 0;
-    font-size: 15px;
+    font-size: .80rem;
     color: rgb(153, 143, 143);
 }
 
@@ -214,7 +209,7 @@ body {
 .project>i {
     padding: 8px;
     color: rgb(190 18 60);
-    font-size: 25px;
+    font-size: 1rem;
 }
 
 .additional-content {
@@ -224,7 +219,7 @@ body {
 }
 
 .stack>.title {
-    font-size: 15px;
+    font-size: .5rem;
     color: white;
     font-weight: 600;
     margin: 10px;
@@ -237,6 +232,9 @@ body {
 }
 
 .techno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     /* max-width: min-content; */
     border: 1px solid var(--bg-secondary-color);
@@ -248,7 +246,7 @@ body {
     margin-top:4px;
     padding: 2px 3px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 1rem;
     color: rgb(153, 143, 143);
     border: 1px solid rgb(153, 143, 143);
     text-align: center;
@@ -264,6 +262,19 @@ body {
     column-gap: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profil-card {
+        position: relative;
+    }
+    .content {
+        width: 100%;
+    }
+  }
+
 @keyframes slide-in {
     from {
         translate: 5vw 0;
@@ -278,5 +289,6 @@ body {
 
 hr.solid {
     border-top: 3px solid #bbb;
-    width: 45rem;
+    width: 100%;
+    margin:0 auto;
 }
