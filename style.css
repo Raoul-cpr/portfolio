@@ -169,14 +169,14 @@ body {
 .project-description {
     padding: 15px 0;
     margin: 0;
-    font-size: .80rem;
+    font-size: 1rem;
     color: rgb(153, 143, 143);
 }
 
 .role-description,
 .period {
     padding: 15px 0;
-    font-size: .80rem;
+    font-size: 1rem;
     color: rgb(153, 143, 143);
 }
 
@@ -219,7 +219,7 @@ body {
 }
 
 .stack>.title {
-    font-size: .5rem;
+    font-size: 1rem;
     color: white;
     font-weight: 600;
     margin: 10px;
@@ -246,7 +246,7 @@ body {
     margin-top:4px;
     padding: 2px 3px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(153, 143, 143);
     border: 1px solid rgb(153, 143, 143);
     text-align: center;
@@ -295,6 +295,11 @@ body {
 
     .profil-card-image {
         margin-top: 0;
+    }
+
+    .technos {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
     
   }
